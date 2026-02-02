@@ -5,18 +5,55 @@ import Analytics from '@vercel/analytics/astro'
 
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logo1.webp" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Division Andina || Arma III</title>
-		<meta name="description" content="Division Andina – Comunidad de Arma III dedicada a misiones tácticas, MilSim y entrenamiento militar virtual." />
-		<meta name="keywords" content="Arma III, MilSim, División Andina, comunidad Arma III, simulación militar" />
-		<meta name="author" content="División Andina" />
-		<meta name="author" content="__Dany__" />
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		    <!-- Favicon -->
+    	<link rel="icon" type="image/webp" href="/logo1.webp" />
 		
+    	<!-- SEO básico -->
+    	<title>División Andina Arma 3 | Comunidad MILSIM LATAM</title>
+		
+		<meta
+    	  name="description"
+    	  content="División Andina es una comunidad Arma 3 MILSIM LATAM con servidores Invade & Annex públicos y un servidor MILSIM privado con ACE, TeamSpeak y operaciones organizadas."
+    	/>
+		
+		<meta
+    	  name="keywords"
+    	  content="División Andina, Arma 3, Arma III, MILSIM, Invade & Annex, ACE, Liberation, TeamSpeak, servidor Arma 3 LATAM"
+    	/>
+		
+		
+    	<meta name="author" content="División Andina" />
+		
+		<!-- Open Graph (Discord / Facebook) -->
+    	<meta property="og:type" content="website" />
+    	<meta property="og:title" content="División Andina | Comunidad Arma 3 MILSIM LATAM" />
+    	<meta
+    	  property="og:description"
+    	  content="Comunidad latinoamericana de Arma 3 con servidores públicos y MILSIM privado con postulación, rangos y operaciones organizadas."
+    	/>
+    	<meta property="og:image" content="https://divisionandinagaming.cl/og-image.webp" />
+    	<meta property="og:url" content="https://divisionandinagaming.cl" />
+    	<meta property="og:site_name" content="División Andina" />
+		
+    	<!-- Twitter Card -->
+    	<meta name="twitter:card" content="summary_large_image" />
+    	<meta name="twitter:title" content="División Andina | Arma 3 MILSIM LATAM" />
+    	<meta
+    	  name="twitter:description"
+    	  content="Servidores Arma 3 Invade & Annex públicos y MILSIM privado con ACE, TeamSpeak y Liberation."
+    	/>
+    	<meta name="twitter:image" content="https://divisionandinagaming.cl/og-image.webp" />
+		
+    	<!-- Astro -->
+    	<meta name="generator" content={Astro.generator} />
+
+
+
 	</head>
 	<body class="bg-slate-800 text-slate-100">
 		<slot />
