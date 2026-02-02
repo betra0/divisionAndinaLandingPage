@@ -7,8 +7,8 @@ import background from '../assets/background.svg';
 <div id="container">
 
 	<img id="2background" src="andina.png"
-	alt="" fetchpriority="high"
-	class="absolute top-0 left-0 w-full h-full z-[-3] filter blur-[1px] object-cover"
+		alt="" fetchpriority="high"
+		class="absolute top-0 left-0 w-full h-full z-[-3] filter blur-[1px] object-cover"
 	/>
 	<div
 	  class="bg bg-green-300/15 absolute w-full h-full z-[-2] blur-[1px]"
@@ -19,9 +19,9 @@ import background from '../assets/background.svg';
 			<a href="/" id="logo" class="relative w-[100%] text-center mb-8">
 			  <!-- fondo -->
 			<img 
-  src="logo1.webp" 
-  alt="Logo" 
-  class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+  			src="logo1.webp" 
+  			alt="Logo" 
+  			class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
          md:scale-[1.7] blur-[15px] z-[-1] scale-[1.5] e-fade-up" 
 			/>
 			  <!-- Logo principal -->
@@ -143,11 +143,25 @@ import background from '../assets/background.svg';
   	  transform: translateY(0);
   	}
 	}
+	@keyframes fadeUpAndUp {
+		from {
+		  opacity: 0;
+		  transform: translateY(50px) scale(1);
+		}
+		to {
+		  opacity: 1;
+		  transform: translateY(0) scale(1);
+		}
+	}
+
+	.e-fadeAndUp {
+		animation: fadeUpAndUp 1s ease-out both;
+	}
 
 	.e-fade-up {
-  	animation: fadeUp 1.4s ease-out both;
+  	animation: fadeUp 1.8s ease-out both;
 	}
-	.eLogo-fade-up {
+	.eLogo-fade-up {	
   	animation: fadeUp 0.8s ease-out both;
 	}
 
