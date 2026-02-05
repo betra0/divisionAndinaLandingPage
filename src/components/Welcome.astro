@@ -17,7 +17,7 @@ import background from '../assets/background.svg';
 	  class="bg bg-green-300/15 absolute w-full h-full z-[-2] blur-[1px]"
 	></div>
 
-	<main>
+	<main class="md:h-[80%] h-[80%]">
 		<h1 class="sr-only">
 		  División Andina – Comunidad Arma 3 MILSIM LATAM
 		</h1>
@@ -39,16 +39,16 @@ import background from '../assets/background.svg';
 		</p>
 
 		<section id="hero" class=" relative flex flex-col items-center text-2xl justify-around">
-			<a href="/" id="logo" class="relative w-[100%] text-center mb-8">
+			<a href="/" id="logo" class="relative w-[100%] text-center mb-0 md:mb-8">
 			  <!-- fondo -->
-			<img 
-  			src="logo1.webp" 
-  			alt="Logo" 
-  			class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
-         md:scale-[1.7] blur-[15px] z-[-1] scale-[1.5] e-fade-up" 
-			/>
+				<img 
+  					src="logo1.webp" 
+  					alt="Logo" 
+  					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+         			md:scale-[1.7] blur-[15px] z-[-1] scale-[1.4] e-fade-up" 
+				/>
 			  <!-- Logo principal -->
-			  <img src="logo1.webp" alt="Logo" class="w-full h-full relative hover:scale-110 transition-transform duration-500 eLogo-fade-up" />
+			  <img src="logo1.webp" alt="Logo" class="m-auto md:w-full md:h-full w-[90%] relative hover:scale-110 transition-transform duration-500 eLogo-fade-up" />
 			</a>
 
 			<!-- Links Principales -->
@@ -96,12 +96,12 @@ import background from '../assets/background.svg';
 	
 </div>
 <a class="absolute md:bottom-6 md:right-6 text-white text-lg font-semibold 
-          bg-black/50 backdrop-blur-sm px-4 py-2 rounded-lg 
-          shadow-lg animate-bounce-slow
-					bottom-4 -right-1 e-fadeAndUp"
-					href="https://discord.gg/pR7qjc6Vs4" target="_blank">
-  🎮 ¡Únete a nuestro Discord y forma parte de la comunidad!
-</a>
+	          bg-black/50 backdrop-blur-sm px-4 py-2 rounded-lg 
+	          shadow-lg animate-bounce-slow
+						bottom-4 -right-1"
+						href="https://discord.gg/pR7qjc6Vs4" target="_blank">
+	  🎮 ¡Únete a nuestro Discord y forma parte de la comunidad!
+	</a>
 
 
 
@@ -110,12 +110,15 @@ import background from '../assets/background.svg';
 
 
 	#container {
+		position: relative;
 		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100vh;
+		width:100vw;
+		height:100dvh;
+		min-height:500px;
+
 	}
 
 	main {
-		height: 80%;
 		display: flex;
 		justify-content: center;
 	}
